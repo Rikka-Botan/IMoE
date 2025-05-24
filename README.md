@@ -30,14 +30,14 @@ and then synapses are pruned as the brain grows.
 This growth process is equivalent to applying Erdős-Rényi-Gilbert model
 then fitness model (Bianconi-Barabási model).
 
-Step 1: Erdős-Rényi-Gilbert model like growth process
+### Step 1: Erdős-Rényi-Gilbert model like growth process
 
 Individual synapses are not affected by the state of other synapses
 and are probabilistically formed.
 This phenomenon is represented by Erdős-Rényi-Gilbert model
 and is achieved in the algorithm by a parallel definition of the modules.
 
-Step 2: fitness model (Bianconi-Barabási model) like routing
+### Step 2: fitness model (Bianconi-Barabási model) like routing
 
 Individual neurons have link coefficients
 which affect connected synapses architecture.
@@ -48,6 +48,7 @@ This mechanism is realized by a dynamic, multi-level branching process
 using softmax functions and non linear projections.
 
 ***
+## Formulation
 
 ```math
 \displaylines{
