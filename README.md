@@ -52,14 +52,14 @@ using softmax functions and non linear projections.
 
 ```math
 \displaylines{
-W_g \in \mathbb{R^{M \times N}}, \; x \in \mathbb{R^N} \\
+W_g \in \mathbb{R^{M \times N}}, \; W_o \in \mathbb{R^{N \times L}}, \; x \in \mathbb{R^N} \\
 E = \left( f_1, f_2, \cdots f_G \right) \\
 \forall f_i (f_i \in \mathbb{R^{L \times N}}) \\
 s: \; gate \; num \\
 Softmax(x) = \frac{e^{x_k}}{\sum_{k=0}^K e^{x_k}} \\
 G(x) = Softmax(W_g x) \\
-\Gamma_k(x) = TopP(G(x), s) \\
-y = \sum_{i \in \Gamma_k(x)}G_i(x)f_i(x)
+\xi_k(x), \; \Gamma_k(x) = TopP(G(x), s) \\
+y = W_o \sum_{i \in \Gamma_k(x)}\xi_kG_i(x)f_i(x)
 }
 ```
 
