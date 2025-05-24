@@ -65,7 +65,7 @@ Commercial use permitted
 - Clone the repository
 
 ```bash
-git clone https://github.com/Rikka-Botan/Accelerated_Hadamard.git
+git clone https://github.com/Rikka-Botan/IMoE.git
 ```
 
 - Model create
@@ -73,10 +73,18 @@ git clone https://github.com/Rikka-Botan/Accelerated_Hadamard.git
 ```python
 """
 Args:
-hadamard_size: int - model head dim
+input_dim: int
+inter_dim: int
+gate_num: int
+top_p: float (default: 0.3)
+temperature: float (default: 1.0)
+noise: float (default: 0.1)
+bias: bool (default: False)
+device: Any | None (default: None)
+dtype: Any | None (default: None)
 """
 
-from model.AHT_modeling import BotanAHT
+from model.IMoE_modeling import BotanAHT
 
 model = BotanAHT(
   hadamard_size
