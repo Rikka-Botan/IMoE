@@ -54,8 +54,8 @@ E = \left( f_1, f_2, \cdots f_G \right) \\
 s: \; gate \; num \\
 Softmax(x) = \frac{e^{x_k}}{\sum_{k=0}^K e^{x_k}} \\
 G(x) = Softmax(W_g x)) \\
-\mathfrak{I}_k(x) = TopP(G(x), s) \\
-y = \sum_{i \in \mathfrak{I}_k(x)}G_i(x)f_i(x)
+\Gamma_k(x) = TopP(G(x), s) \\
+y = \sum_{i \in \Gamma_k(x)}G_i(x)f_i(x)
 }
 ```
 
