@@ -48,7 +48,7 @@ This mechanism is realized by a dynamic, multi-level branching process
 using softmax functions and non linear projections.
 
 ***
-## Formulation
+### Formulation
 
 ```math
 \displaylines{
@@ -56,7 +56,7 @@ W_g \in \mathbb{R^{M \times N}}, \; x \in \mathbb{R^N} \\
 E = \left( f_1, f_2, \cdots f_G \right) \\
 s: \; gate \; num \\
 Softmax(x) = \frac{e^{x_k}}{\sum_{k=0}^K e^{x_k}} \\
-G(x) = Softmax(W_g x)) \\
+G(x) = Softmax(W_g x) \\
 \Gamma_k(x) = TopP(G(x), s) \\
 y = \sum_{i \in \Gamma_k(x)}G_i(x)f_i(x)
 }
