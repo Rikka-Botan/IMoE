@@ -90,7 +90,7 @@ inter_dim: int
 gate_num: int
 top_p: float (default: 0.3)
 temperature: float (default: 1.0)
-noise: float (default: 0.1)
+noise: float (default: 0.1) - gating noise parameter when training
 bias: bool (default: False)
 device: Any | None (default: None)
 dtype: Any | None (default: None)
