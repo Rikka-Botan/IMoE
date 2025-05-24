@@ -54,6 +54,7 @@ using softmax functions and non linear projections.
 \displaylines{
 W_g \in \mathbb{R^{M \times N}}, \; x \in \mathbb{R^N} \\
 E = \left( f_1, f_2, \cdots f_G \right) \\
+\forall f_i (f_i \in \mathbb{R^{L \times N}}) \\
 s: \; gate \; num \\
 Softmax(x) = \frac{e^{x_k}}{\sum_{k=0}^K e^{x_k}} \\
 G(x) = Softmax(W_g x) \\
