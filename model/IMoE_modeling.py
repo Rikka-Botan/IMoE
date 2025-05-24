@@ -46,7 +46,7 @@ using softmax functions and non linear projections.
 
 > gate = Softmax(Linear(x))
 
-> x = Top-k(gate) * x
+> x = Top-p(gate) * x
 """
 
 def get_top_p(
@@ -82,7 +82,7 @@ def get_top_p(
     return x, top_p_indices
 
 
-class IMoE(nn.Module):
+class BotanIMoE(nn.Module):
     def __init__(
         self,
         input_dim: int,
