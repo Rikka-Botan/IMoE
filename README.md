@@ -47,6 +47,8 @@ but converge to a constant distribution as they grow older.
 This mechanism is realized by a dynamic, multi-level branching process
 using softmax functions and non linear projections.
 
+***
+
 ```math
 \displaylines{
 W_g \in \mathbb{R^{M \times N}}, \; x \in \mathbb{R^N} \\
