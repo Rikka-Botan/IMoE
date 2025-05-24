@@ -59,7 +59,7 @@ s: \; gate \; num \\
 Softmax(x) = \frac{e^{x_k}}{\sum_{k=0}^K e^{x_k}} \\
 G(x) = Softmax(W_g x) \\
 \xi_k(x), \; \Gamma_k(x) = TopP(G(x), s) \\
-y = W_o \sum_{i \in \Gamma_k(x)}\xi_kG_i(x)f_i(x)
+y = W_o \sum_{i \in \Gamma_k(x)}\xi_i(x)G_i(x)f_i(x)
 }
 ```
 
