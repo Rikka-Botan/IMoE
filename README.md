@@ -47,9 +47,17 @@ but converge to a constant distribution as they grow older.
 This mechanism is realized by a dynamic, multi-level branching process
 using softmax functions and non linear projections.
 
-$ gate = Softmax(Linear(x)) $
-$ x = Top-p(gate) * x $
-
+```math
+\displaylines{
+W_g \in \mathbb{R^{M \times N}}, \; x \in \mathbb{R^N} \\
+E = \left( f_1, f_2, \cdots f_G \right) \\
+s: \; gate \; num \\
+Softmax(x) = \frac{e^{x_k}}{\sum_{k=0}^K e^{x_k}} \\
+G(x) = Softmax(W_g x)) \\
+\mathcal{I}_k(x) = TopP(G(x), s) \\
+y = \sum_{i \in \mathcal{I}_k(x)}G_i(x)f_i(x)
+}
+```
 
 
 ## Implementation and License
@@ -84,10 +92,10 @@ device: Any | None (default: None)
 dtype: Any | None (default: None)
 """
 
-from model.IMoE_modeling import BotanAHT
+from model.IMoE_modeling import BotanIMoE
 
-model = BotanAHT(
-  hadamard_size
+model = BotanIMoE(
+  768, 768, 16
 )
 output = model(hidden_states)
 ```
