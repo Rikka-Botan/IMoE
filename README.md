@@ -1,7 +1,8 @@
 # IMoE: Indefinacy Mixture of Experts
 Pytorch official implementation
 
-![IMoE](https://github.com/user-attachments/assets/5785f168-2604-4b36-b357-6139b28a0fee)
+![IMoE](https://github.com/user-attachments/assets/6584fea3-fe9b-4a27-808a-b60a91e530db)
+
 
 Information distribution entropy is equivalent to the confidence level in the model.
 
