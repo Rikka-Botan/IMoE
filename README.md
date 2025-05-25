@@ -1,6 +1,15 @@
 # IMoE: Indefinacy Mixture of Experts
 Pytorch official implementation
 
+![IMoE](https://github.com/user-attachments/assets/5785f168-2604-4b36-b357-6139b28a0fee)
+
+Information distribution entropy is equivalent to the confidence level in the model.
+
+The entropy decreases with learning. 
+
+This is consistent with the growth process of neurons.
+
+
 ## About
 
 IMoE dynamically selects neurons.
