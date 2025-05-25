@@ -42,7 +42,7 @@ These link coefficients change dynamically in response to the environment.
 These link coefficients are a random distribution in childhood,
 but converge to a constant distribution as they grow older.
 This mechanism is realized by a dynamic, multi-level branching process
-using softmax functions and non linear projections.
+using softmax functions and linear projections.
 
 > gate = Softmax(Linear(x))
 
