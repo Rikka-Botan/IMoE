@@ -45,7 +45,7 @@ These link coefficients change dynamically in response to the environment.
 These link coefficients are a random distribution in childhood,
 but converge to a constant distribution as they grow older.
 This mechanism is realized by a dynamic, multi-level branching process
-using softmax functions and non linear projections.
+using softmax functions and linear projections.
 
 ***
 ### Formulation
@@ -59,7 +59,7 @@ s: \; gate \; thres \\
 Softmax(x) = \frac{e^{x_k}}{\sum_{k=0}^K e^{x_k}} \\
 G(x) = Softmax(W_g x) \\
 \xi_k(x), \; \Gamma_k(x) = TopP(G(x), s) \\
-y = W_o \sum_{i \in \Gamma_k(x)}\xi_i(x)G_i(x)f_i(x)
+y = W_o \sum_{i \in \Gamma_k(x)}\xi_i(x)f_i(x)
 }
 ```
 
