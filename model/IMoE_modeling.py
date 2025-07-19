@@ -75,7 +75,7 @@ def get_top_p(
         x = x / temperature
 
     if top_p >= 1.0:
-        ValueError('top_p should be less than 1.0. default value is 0.3.')
+        raise ValueError('top_p should be less than 1.0. default value is 0.3.')
 
     top_p_indices = x > top_p
 
